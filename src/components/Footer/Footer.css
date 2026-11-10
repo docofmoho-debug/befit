@@ -1,0 +1,316 @@
+.footer{
+    background:#171717;
+    color:#fff;
+    padding:30px;
+    border:none;
+}
+
+/* =========================
+   Top
+========================= */
+
+.footer-top{
+    display:grid;
+    grid-template-columns:1.5fr 2fr;
+    gap:60px;
+}
+
+/* =========================
+   About
+========================= */
+
+.footer-about h2{
+    font-size:2.3rem;
+    color:var(--primary-color);
+    margin-bottom:18px;
+    font-weight:800;
+}
+
+.footer-about p{
+    color:#b8b8b8;
+    line-height:1.8;
+    margin-bottom:30px;
+    max-width:420px;
+}
+
+.footer-contact{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.footer-contact span{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#d4d4d4;
+    transition:.3s;
+}
+
+.footer-contact span:hover{
+    color:#fff;
+}
+
+/* =========================
+   Newsletter
+========================= */
+
+.footer-newsletter{
+    margin-top:60px;
+    padding:40px;
+    background:#202020;
+    border-radius:20px;
+    text-align:center;
+}
+
+.footer-newsletter h3{
+    color:#fff;
+    font-size:1.5rem;
+    margin-bottom:12px;
+}
+
+.footer-newsletter p{
+    color:#b8b8b8;
+    line-height:1.7;
+    margin-bottom:25px;
+    max-width:600px;
+    margin-inline:auto;
+}
+
+.newsletter-form{
+    display:flex;
+    gap:14px;
+    max-width:700px;
+    margin:auto;
+}
+
+.newsletter-form input{
+    width:100%;
+    height:56px;
+
+    display:block;
+
+    padding:0 18px;
+
+    background:#fff;
+    color:#111;
+
+    border:none;
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:16px;
+    line-height:56px;
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    box-sizing:border-box;
+}
+
+.newsletter-form button{
+    min-width:170px;
+    height:54px;
+    border:none;
+    border-radius:14px;
+    background:var(--primary-color);
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter-form button:hover{
+    background:#fff;
+    color:var(--primary-color);
+}
+/* =========================
+   Links
+========================= */
+
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.footer-links h3{
+    color:#fff;
+    margin-bottom:20px;
+    position:relative;
+    padding-bottom:10px;
+}
+
+.footer-links h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:35px;
+    height:3px;
+    border-radius:50px;
+    background:var(--primary-color);
+}
+
+.footer-links a{
+    display:block;
+    margin-bottom:14px;
+    color:#b5b5b5;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:var(--primary-color);
+    padding-left:8px;
+}
+
+/* =========================
+   Bottom
+========================= */
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-top:40px;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-bottom p{
+    color:#999;
+    line-height:1.7;
+}
+
+/* =========================
+   Social
+========================= */
+
+.socials{
+    display:flex;
+    gap:12px;
+}
+
+.socials a{
+    width:44px;
+    height:44px;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#252525;
+    color:#fff;
+    transition:.3s;
+}
+
+.socials a:hover{
+    transform:translateY(-5px);
+    background:var(--primary-color);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:992px){
+
+    .footer-top{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .footer-links{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:768px){
+
+    .footer{
+        padding:60px 20px 25px;
+        text-align:center;
+    }
+
+    .footer-top{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .footer-about p{
+        max-width:100%;
+        margin:0 auto 25px;
+    }
+
+    .footer-contact{
+        align-items:center;
+    }
+
+    .footer-contact span{
+        justify-content:center;
+    }
+
+    .footer-links{
+        grid-template-columns:1fr;
+        gap:30px;
+        text-align:center;
+    }
+
+    .footer-links h3::after{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .footer-newsletter{
+    padding:28px 18px;
+}
+
+.newsletter-form{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    width:100%;
+}
+
+.newsletter-form input,
+.newsletter-form button{
+    width:100%;
+    height:56px;
+    box-sizing:border-box;
+}
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .socials{
+        justify-content:center;
+    }
+
+}
+/* =========================
+   Small Phones
+========================= */
+
+@media (max-width:480px){
+
+    .footer-about h2{
+        font-size:2rem;
+    }
+
+    .footer-links h3{
+        font-size:1.1rem;
+    }
+
+    .socials a{
+        width:42px;
+        height:42px;
+    }}
